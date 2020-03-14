@@ -1,0 +1,7 @@
+#!/bin/sh
+
+q=$(echo | dmenu -fn monospace:size=13)
+if [ ! -z $q ]
+then
+	surf www.google.com/search?q="$q"
+fi
